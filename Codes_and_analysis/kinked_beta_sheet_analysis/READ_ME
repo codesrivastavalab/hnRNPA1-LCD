@@ -1,0 +1,6 @@
+1. Extract C-alpha atom coordinates from the full protein trajectory and use that as an input for the script C_alpha_dihedrals.py.
+2. This code gives a list of C-alpha atom dihedral angles in the C_alpha_dihedral_angles_list.txt file.
+3. Secondary structure information file can be obtained using DSSP. gmx do_dssp -f protein.xtc  -s protein.tpr  -o ss.xpm -ssdump DSSP_secondary_structure_information.dat
+4. C_alpha_dihedral_angles_list.txt and DSSP_secondary_structure_information.dat files are the inputs for the final script to capture the kinked beta sheets. Script name: Classification_of_beta_kink.py
+5. The tunable parameters are mentioned in the scripts.
+
